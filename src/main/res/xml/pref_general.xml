@@ -1,0 +1,46 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- NOTE: EditTextPreference accepts EditText attributes. -->
+    <!-- NOTE: EditTextPreference's summary should be set to its value by the activity code. -->
+    <EditTextPreference
+        android:inputType="number"
+        android:key="default_label_qty"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:title="Label Quantity"
+        android:summary="Default Label Quantity to Print" />
+
+
+    <EditTextPreference
+        android:entries="@array/pref_example_list_titles"
+        android:entryValues="@array/pref_example_list_values"
+        android:key="print_station"
+        android:selectAllOnFocus="true"
+        android:singleLine="false"
+        android:title="Printing Station" />
+
+    <EditTextPreference
+        android:key="label_margin"
+        android:inputType="number"
+        android:title="Label Margin"
+        android:summary="Adjust Label Margin"
+        android:maxLines="1"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:defaultValue="10"/>
+
+    <!--
+    <Preference
+        android:title="Export Data"
+        android:key="exportButton"
+        android:summary="Export Local Data" />
+
+    <Preference
+        android:title="Import Data"
+        android:key="importButton"
+        android:summary="Import QR Barcodes" />
+    -->
+
+
+</PreferenceScreen>

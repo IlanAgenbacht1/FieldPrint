@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@android:style/Holo.ButtonBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BarcodeRegisterActivity">
+
+    <TextView
+        android:id="@+id/textViewEmpName"
+        android:layout_width="264dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="120dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corners"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextQR"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Scan QR Barcode"
+        android:inputType="textPersonName"
+        android:maxLength="7"
+        app:layout_constraintEnd_toEndOf="@+id/textViewEmpName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewEmpName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmpName" />
+
+    <Button
+        android:id="@+id/buttonReturn"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="6dp"
+        android:text="BACK"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewEmpName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewEmpName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextQR" />
+
+</android.support.constraint.ConstraintLayout>
